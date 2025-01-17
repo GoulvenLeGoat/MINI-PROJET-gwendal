@@ -1,0 +1,6 @@
+title Diagramme de séquence pour un scénario de requête HTTP
+
+Client->Server: GET /users
+Server->Database: SELECT * FROM users
+Database-->Server: Liste des utilisateurs
+Server-->Client: HTTP 200 OK + JSON (liste des utilisateurs)
